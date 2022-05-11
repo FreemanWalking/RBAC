@@ -90,7 +90,7 @@ if (!isset($_SESSION['E_email_admin'])){
               $result3 = $conn-> query($q3);
               $i=0;
               while ($parent = $result3 -> fetch_assoc()){
-                echo '<form action="/RBAC/Admin/add.php" method="post" > ';
+                echo '<form action="add.php" method="post" > ';
                 //echo "i this round: ".$i;
                 echo "<tr><td>".$rolearr[$i]["res"]. "</td>";
                 if ($rolearr[$i]["r"]==1)
@@ -129,7 +129,7 @@ if (!isset($_SESSION['E_email_admin'])){
                   echo "<td><input type='checkbox' name='c'> </td>";
 
                 echo "<input type='hidden' name='roleID' value='".$Role_ID."'>";
-                echo "<td> <button id='s' type='submit' name='perm-sub' style='font-size: 1.5vw; width:100%;  margin-left: auto; margin-right: auto;' formaction='/RBAC/Admin/edit.php?entry_id=".$rolearr[$i]["res"]."' formTarget='_blank'>Save</button> ";
+                echo "<td> <button id='s' type='submit' name='perm-sub' style='font-size: 1.5vw; width:100%;  margin-left: auto; margin-right: auto;' formaction='edit.php?entry_id=".$rolearr[$i]["res"]."' formTarget='_blank'>Save</button> ";
                 echo "</form></tr>"; 
                 $i++;
               }
@@ -139,7 +139,7 @@ if (!isset($_SESSION['E_email_admin'])){
               mysqli_next_result($conn);
               //echo "default\n";
               for($i=0; $i<2; $i++){
-                echo '<form action="/RBAC/Admin/add.php" method="post" > ';
+                echo '<form action="add.php" method="post" > ';
                 //echo "i this round: ".$i;
                 echo "<tr><td>".$rolearr[$i]["res"]."</td>";
                 if ($rolearr[$i]["r"]==1)
@@ -167,7 +167,7 @@ if (!isset($_SESSION['E_email_admin'])){
                 else
                   echo "<td><input type='checkbox' name='c' DISABLED> </td>";
                 echo "<input type='hidden' name='roleID' value='".$Role_ID."'>";
-                echo "<td> <button id='s' type='submit' name='perm-sub' style='font-size: 1.5vw; width:100%;  margin-left: auto; margin-right: auto;' formaction='/RBAC/Admin/edit.php?entry_id=".$rolearr[$i]["res"]."' formTarget='_blank'>Save</button> ";
+                echo "<td> <button id='s' type='submit' name='perm-sub' style='font-size: 1.5vw; width:100%;  margin-left: auto; margin-right: auto;' formaction='edit.php?entry_id=".$rolearr[$i]["res"]."' formTarget='_blank'>Save</button> ";
                 echo "</form></tr>"; 
                 
               }
