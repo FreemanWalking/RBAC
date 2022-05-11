@@ -1,0 +1,95 @@
+body {	
+    width: 100%;
+    font-family:Lucida Sans Unicode;
+    background-color:#C4C4C4;
+    margin:0vw;
+}
+
+.container-fluid#header{
+    background-color: #383843;
+    color: #FFEEC1;
+text-align:left;
+}
+
+h1{
+    font-size: 3vw;
+    
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+h2{
+    font-size: 2.2vw;
+    
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.container-fluid#login{
+    width: 40%; 
+    margin-top: 2%; 
+    margin-bottom: 2%; 
+    background-color: white; 
+    font-size: 1.5vw;
+}
+
+.container-fluid#user-add{
+    width: 40%; 
+    margin-top: 2%; 
+    margin-bottom: 2%; 
+    background-color: white; 
+    font-size: 1.5vw;
+}
+
+.container-fluid#menu{
+    width: 60%; 
+    margin-top: 10vw; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.form-floating{
+    width:100%; 
+    height: 100%;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+select{
+    width:100%; 
+    height: 100%;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+button{
+    border: none;
+    width:100%;
+    height: 100%;
+    background-color: #383843;
+    
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #FF5F34;
+}
+
+.col{
+    padding: 0%;
+}
+.row{
+    padding: 0%;
+}
+h3{
+    font-size: 1vw;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+
