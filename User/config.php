@@ -25,7 +25,7 @@ function isLoginSessionExpired($conn) {
     $role = mysqli_fetch_array($result_2);
   
     date_default_timezone_set("Asia/Bangkok");
-    $current_time = date("h:i:s"); 
+    $current_time = date("H:i:s"); 
     $from = $role['Allowed_time'];
     $to = $role['Allowed_time_end'];
     if($current_time >= $from && $current_time <= $to){
