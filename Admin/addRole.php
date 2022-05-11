@@ -114,7 +114,7 @@ if(isset($_POST['role-add-sub'])) {
             }
             if ($result1){
               while ($row1 = $result1 -> fetch_assoc()){
-                echo '<form action="/B/Admin/add.php" method="post" > ';
+                echo '<form action="/RBAC/Admin/add.php" method="post" > ';
                 
                 echo "<tr><td>".$row1['resource_R']. "</td>";
                 if ($row1["read_R"]==1)
@@ -143,7 +143,7 @@ if(isset($_POST['role-add-sub'])) {
                   echo "<td><input type='checkbox' name='c' DISABLED> </td>";
 
                 echo "<input type='hidden' name='rolename' value='".$name."'>";
-                echo "<td> <button id='s' type='submit' name='perm-sub' style='font-size: 1.5vw; width:100%;  margin-left: auto; margin-right: auto;' formaction='/B/Admin/add.php?entry_id=".$row1['resource_R']."' formTarget='_blank'>Save</button> ";
+                echo "<td> <button id='s' type='submit' name='perm-sub' style='font-size: 1.5vw; width:100%;  margin-left: auto; margin-right: auto;' formaction='/RBAC/Admin/add.php?entry_id=".$row1['resource_R']."' formTarget='_blank'>Save</button> ";
                 echo "</form></tr>"; 
                 
               }
