@@ -100,7 +100,7 @@ if(isLoginSessionExpired($conn)) {
             <?php
             
             if ($_SESSION['folder1_execute'] == 1 ){
-              echo "<div style='float:right; text-align: center;'><button type='submit' name='executeFolder1' style='font-size: 1.5vw; width:100%;  margin-left: auto; margin-right: auto;' formaction = '/RBAC/User/execute.php'>Execute</button></div>";
+              echo "<div style='float:right; text-align: center;'><button type='submit' name='executeFolder1' style='font-size: 1.5vw; width:100%;  margin-left: auto; margin-right: auto;' formaction = 'execute.php'>Execute</button></div>";
             } else{
               echo "<div style='float:right; text-align: center;'><button type='submit' name='executeFolder1' style='font-size: 1.5vw; width:100%;  margin-left: auto; margin-right: auto;'><a href='#'>Execute</a></button></div>";
             }
@@ -244,7 +244,7 @@ if(isLoginSessionExpired($conn)) {
             <?php
             
             if ($_SESSION['folder2_execute'] == 1 ){
-              echo "<div style='float:right; text-align: center;'><button type='submit' name='executeFolder2' style='font-size: 1.5vw; width:100%;  margin-left: auto; margin-right: auto;' formaction = '/RBAC/User/execute.php'>Execute</button></div>";
+              echo "<div style='float:right; text-align: center;'><button type='submit' name='executeFolder2' style='font-size: 1.5vw; width:100%;  margin-left: auto; margin-right: auto;' formaction = 'execute.php'>Execute</button></div>";
             } else{
               echo "<div style='float:right; text-align: center;'><button type='submit' name='executeFolder2' style='font-size: 1.5vw; width:100%;  margin-left: auto; margin-right: auto;'><a href='#'>Execute</a></button></div>";
             }
