@@ -38,7 +38,7 @@ if (!isset($_SESSION['E_email_admin'])){
     echo"<select name='teamID'>";
     echo"<option>-- Team ID --</option>";
     while($row= mysqli_fetch_array($result)){
-      echo"<option value='$row[TeamID]'>row[Name]</option>";
+      echo"<option value='$row[TeamID]'> $row[Name]</option>";
     }
     echo"</select>";
     ?>
