@@ -1,4 +1,4 @@
 # RBAC
 Access Control Group Project
 
-hello world
+Prototype of hierarchical RBAC system for PaaS.
